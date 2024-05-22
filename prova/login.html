@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>  
+    <div class="container">
+        <h1>Login</h1>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            
+        </div>
+        
+    </div>
+    </header>
+        <div class="login-form">
+            <div class="login-form__header">
+                Accedi come Cliente
+            </div>
+            <form id="customerLoginForm" action="login-clienti.php" method="POST">
+                <div class="form-group">
+                    <label for="customernome">Email:</label>
+                    <input type="text" id="customeremail" name="customeremail">
+                </div>
+                <div class="form-group">
+                    <label for="customerPassword">Password:</label>
+                    <input type="password" id="customerPassword" name="customerPassword">
+                </div>
+                <button type="submit">Accedi</button>
+            </form>
+        </div>
+
+        <div class="login-form">
+            <div class="login-form__header">
+                Accedi come Contadino
+            </div>
+            <form id="farmerLoginForm" action="login-contadino.php" method="POST">
+                <div class="form-group">
+                    <label for="farmerId">ID:</label>
+                    <input type="text" id="farmerId" name="farmerId">
+                </div>
+            
+                <div class="form-group">
+                    <label for="farmerPassword">Password:</label>
+                    <input type="password" id="farmerPassword" name="farmerPassword">
+                </div>
+                <button type="submit">Accedi</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

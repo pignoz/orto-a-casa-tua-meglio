@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mercato Locale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Il Mercato Locale</h1>
+            <div class="logo">
+                <img src="logo.png" alt="Logo di Il Mercato Locale" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contadini.html" target="_blank">Registrazione contadini</a></li>
+                    <li><a href="registrazione-clienti.html" target="_blank">Registrazione clienti</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="search">
+        <div class="container">
+            <form>
+                <input type="text" id="searchInput" placeholder="Cerca prodotti per nome o caratteristiche" aria-label="Cerca prodotti">
+                <button type="button" id="searchButton" aria-label="Cerca">Cerca</button>
+                <select id="filterSelect">
+                    <option value="tutti">Tutti</option>
+                    <option value="Trentino">Trentino</option>
+                    <option value="Puglia">Puglia</option>
+                    <!-- Aggiungi altre opzioni di provenienza qui -->
+                </select>
+            </form>
+        </div>
+    </section>
+    
+    <section class="products">
+        <div class="container">
+            <div class="product-list" id="productList">
+                <div class="product">
+                    <img src="mele.jpg" alt="Mele" class="product-img">
+                    <h2>Mele</h2>
+                    <p>Prezzo: €1.50/kg</p>
+                    <p>Descrizione: Mele rosse biologiche</p>
+                    <p>Provenienza: Trentino</p>
+                </div>
+                <div class="product">
+                    <img src="pomodori.jpg" alt="Pomodori" class="product-img">
+                    <h2>Pomodori</h2>
+                    <p>Prezzo: €2.00/kg</p>
+                    <p>Descrizione: Pomodori maturati al sole</p>
+                    <p>Provenienza: Puglia</p>
+                </div>
+                <div class="product">
+                    <img src="mele.jpg" alt="Mele" class="product-img">
+                    <h2>Mele</h2>
+                    <p>Prezzo: €1.50/kg</p>
+                    <p>Descrizione: Mele rosse biologiche</p>
+                    <p>Provenienza: Trentino</p>
+                </div>
+                <div class="product">
+                    <img src="pomodori.jpg" alt="Pomodori" class="product-img">
+                    <h2>Pomodori</h2>
+                    <p>Prezzo: €2.00/kg</p>
+                    <p>Descrizione: Pomodori maturati al sole</p>
+                    <p>Provenienza: Puglia</p>
+                </div>
+                <div class="product">
+                    <img src="mele.jpg" alt="Mele" class="product-img">
+                    <h2>Mele</h2>
+                    <p>Prezzo: €1.50/kg</p>
+                    <p>Descrizione: Mele rosse biologiche</p>
+                    <p>Provenienza: Trentino</p>
+                </div>
+                <div class="product">
+                    <img src="pomodori.jpg" alt="Pomodori" class="product-img">
+                    <h2>Pomodori</h2>
+                    <p>Prezzo: €2.00/kg</p>
+                    <p>Descrizione: Pomodori maturati al sole</p>
+                    <p>Provenienza: Puglia</p>
+                </div>
+                
+                <!-- Aggiungi altre div .product qui -->
+            </div>
+            <div class="navigation">
+                <button id="prevButton" disabled>Indietro</button>
+                <button id="nextButton">Avanti</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Termini e condizioni</a></li>
+                <li><a href="#">Contattaci</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

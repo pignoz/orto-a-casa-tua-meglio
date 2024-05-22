@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione Contadini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-img">
+            </div>
+            <h1>Registrazione Contadini</h1>
+        </div>
+    </header>
+    
+    <section class="registrationcon">
+        <div class="container">
+            <form id="farmer-register-form" action="registrazione-clienti.php" method="POST">
+                <div class="form-group">
+                    <label for="id">Id</label>
+                    <input type="id" id="id" name="id" required>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="cognome" name="cognome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Registrati</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Termini e condizioni</a></li>
+                <li><a href="#">Contattaci</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
